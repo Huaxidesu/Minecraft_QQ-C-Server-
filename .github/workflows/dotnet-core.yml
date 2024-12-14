@@ -1,13 +1,12 @@
 name: Minecraft_QQ构建
 
 on:
-    push:
-      # Sequence of patterns matched against refs/heads
-      branches:    
-        - 'releases/**'
-      # Sequence of patterns matched against refs/tags
-      tags:        
-        - '*'
+  push:
+    branches:
+      - 'releases/**'
+    tags:
+      - '*'
+  workflow_dispatch:  # 添加这一行
 
 jobs:
   build-linux:
